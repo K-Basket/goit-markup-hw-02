@@ -1,6 +1,66 @@
-/* цвет текста-герой #FFFFFF */
-/* Основной цвет текста #212121 */
-/* Цвет текста вторичный #757575 */
-/* цвет акцент #2196F3 */
-/* цвет ссылки подвал rgba(255, 255, 255, 0.6) */
+:root {
+  --main-text-color: #757575;
+  --second-text-color: #212121;
+  --accent-color: #2196F3;
+}
 
+/* site */
+body {
+  background-color: #fff;
+  color: var(--main-text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* logo */
+.logo {
+  color: #000000;
+}
+
+.logo span {
+  color: var(--accent-color);
+}
+
+/* site-nav */
+.site-nav a {
+  color: var(--second-text-color);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+
+/* contact-nav */
+.contact-nav a {
+  color: var(--main-text-color);
+}
+
+.contact-nav a:hover,
+.contact-nav a:focus {
+  color: var(--accent-color);
+}
+
+/* hero */
+
+
+/* section */
+.section-title {
+  color: var(--second-text-color);
+}
+
+.section-par {
+  color: var(--second-text-color);
+}
+
+
+/* footer */
+.contact-footer a {
+  /* color: rgba(255, 255, 255, 0.6);; */
+}
