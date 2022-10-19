@@ -58,7 +58,7 @@ a {
   background-color: var(--bg-primary-color);
 }
 
-.hero h1 {
+.hero-title {
   color: #FFFFFF;
 }
 
@@ -67,12 +67,26 @@ a {
   background-color: var(--white-color);
 }
 
+.button.primary:hover {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
 /* section */
-.section h2 {
+.section-title {
   color: var(--text-secondary-color);
 }
 
-.section h3 {
+/* features */
+.feature-list .title {
+  color: var(--text-secondary-color);
+}
+
+/* works */
+.work-list {}
+
+/* staffs */
+.staff-list .name {
   color: var(--text-secondary-color);
 }
 
@@ -89,10 +103,10 @@ footer {
   color: var(--accent-color);
 }
 
-.address-footer {
+.contact-footer {
   color: var(--white-color);
 }
 
-.address-footer a {
+.contact-footer-link {
   color: rgba(255, 255, 255, 0.6);
 }
