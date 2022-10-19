@@ -66,12 +66,18 @@ body {
 }
 
 /* button */
-.button {
-  color: var(--text-main-color);
-  background-color: var(--white-color);
+.hero-button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
 
-.button.primary:hover {
+.radio-button .button {
+  color: var(--text-secondary-color);
+  background-color: var(--bg-tertiary-color);
+}
+
+.radio-button .button:hover,
+.radio-button .button:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
@@ -92,6 +98,15 @@ body {
 /* staffs */
 .staff-list .name {
   color: var(--text-secondary-color);
+}
+
+/* portfolio list */
+ 
+.portfolio-list .link {
+  color: var(--text-secondary-color);
+}
+.portfolio-list .text {
+  color: var(--text-main-color);
 }
 
 /* footer */
