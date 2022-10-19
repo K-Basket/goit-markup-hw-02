@@ -1,13 +1,18 @@
 :root {
-  --main-text-color: #757575;
-  --second-text-color: #212121;
+  --text-main-color: #757575;
+  --text-secondary-color: #212121;
+  --white-color: #FFFFFF;
+  --black-color: #000000;
   --accent-color: #2196F3;
+  --bg-primary-color: #2F303A;
+  --bg-secondary-color: #F5F5F5;
+  --bg-tertiary-color: #F5F4FA;
 }
 
 /* site */
 body {
-  background-color: #fff;
-  color: var(--main-text-color);
+  background-color: var(--white-color);
+  color: var(--text-main-color);
 }
 
 ul {
@@ -19,17 +24,18 @@ a {
 }
 
 /* logo */
-.logo {
-  color: #000000;
+
+.logo-nav {
+  color: var(--black-color);
 }
 
-.logo span {
+.logo-nav span {
   color: var(--accent-color);
 }
 
 /* site-nav */
 .site-nav a {
-  color: var(--second-text-color);
+  color: var(--text-secondary-color);
 }
 
 .site-nav a:hover,
@@ -39,7 +45,7 @@ a {
 
 /* contact-nav */
 .contact-nav a {
-  color: var(--main-text-color);
+  color: var(--text-main-color);
 }
 
 .contact-nav a:hover,
@@ -48,19 +54,45 @@ a {
 }
 
 /* hero */
+.hero {
+  background-color: var(--bg-primary-color);
+}
 
+.hero h1 {
+  color: #FFFFFF;
+}
+
+.button {
+  color: var(--text-main-color);
+  background-color: var(--white-color);
+}
 
 /* section */
-.section-title {
-  color: var(--second-text-color);
+.section h2 {
+  color: var(--text-secondary-color);
 }
 
-.section-par {
-  color: var(--second-text-color);
+.section h3 {
+  color: var(--text-secondary-color);
 }
-
 
 /* footer */
-.contact-footer a {
-  /* color: rgba(255, 255, 255, 0.6);; */
+footer {
+  background-color: var(--bg-primary-color);
+}
+
+.logo-footer {
+  color: var(--white-color);
+}
+
+.logo-footer span {
+  color: var(--accent-color);
+}
+
+.address-footer {
+  color: var(--white-color);
+}
+
+.address-footer a {
+  color: rgba(255, 255, 255, 0.6);
 }
