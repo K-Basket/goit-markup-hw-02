@@ -19,7 +19,8 @@ body {
 
 button {
   font-family: 'Roboto', sans-serif;
-}
+  cursor: pointer;
+    }
 
 .list-none {
   list-style: none;
@@ -155,15 +156,10 @@ button {
 }
 
 .feature-list .text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-
-/* works */
-
-.work-list {}
 
 /* staffs */
 
@@ -177,7 +173,6 @@ button {
 }
 
 .staff-list .text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -200,7 +195,6 @@ button {
 
 .portfolio-list .text {
   color: var(--text-main-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
@@ -224,7 +218,6 @@ footer {
 
 .contact-footer {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -236,4 +229,9 @@ footer {
 
 .contact-footer .link {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-footer .link:hover,
+.contact-footer .link:focus {
+  color: var(--accent-color);
 }
