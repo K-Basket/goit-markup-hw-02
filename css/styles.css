@@ -4,12 +4,11 @@
   --white-color: #FFFFFF;
   --black-color: #000000;
   --accent-color: #2196F3;
+  --accent-secondary-color: #188CE8;
   --bg-primary-color: #2F303A;
   --bg-secondary-color: #F5F5F5;
   --bg-tertiary-color: #F5F4FA;
 }
-
-/* site */
 
 body {
   background-color: var(--white-color);
@@ -20,7 +19,7 @@ body {
 button {
   font-family: 'Roboto', sans-serif;
   cursor: pointer;
-    }
+}
 
 .list-none {
   list-style: none;
@@ -30,7 +29,8 @@ button {
   text-decoration: none;
 }
 
-/* logo nav */
+
+/* header */
 
 .logo-nav,
 .logo-footer {
@@ -48,8 +48,6 @@ button {
 .logo-nav .secondary-color {
   color: var(--black-color);
 }
-
-/* navigation */
 
 .site-nav,
 .contact-nav {
@@ -81,11 +79,24 @@ button {
   color: var(--accent-color);
 }
 
+
+/* Main page */
+
+/* section */
+
+.section-title {
+  color: var(--text-secondary-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 /* hero */
 
 .hero {
   background-color: var(--bg-primary-color);
-  padding: 200px 452px 280px 452px;
 }
 
 .hero-title {
@@ -98,50 +109,22 @@ button {
   text-transform: uppercase;
 }
 
-/* button */
-
-.hero-button {
+.hero .button {
   color: var(--white-color);
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
 
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   margin: auto;
 }
 
-.radio-button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.radio-button .button {
-  color: var(--text-secondary-color);
-  background-color: var(--bg-tertiary-color);
-}
-
-.radio-button .button:hover,
-.radio-button .button:focus {
-  color: var(--white-color);
-  background-color: var(--accent-color);
-}
-
-/* section */
-
-.section-title {
-  color: var(--text-secondary-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+.hero .button:hover,
+.hero .button:focus {
+  background-color: var(--accent-secondary-color);
 }
 
 /* features */
@@ -179,7 +162,24 @@ button {
   letter-spacing: 0.03em;
 }
 
-/* portfolio list */
+
+/* Portfolio page */
+
+.portfolio-button .button {
+  color: var(--text-secondary-color);
+  background-color: var(--bg-tertiary-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-button .button:hover,
+.portfolio-button .button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
 
 .portfolio-list .link {
   color: var(--text-secondary-color);
@@ -205,8 +205,6 @@ button {
 footer {
   background-color: var(--bg-primary-color);
 }
-
-/* logo footer */
 
 .logo-footer .accent-color {
   color: var(--accent-color);
